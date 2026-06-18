@@ -27,8 +27,8 @@ export default function Navbar() {
           </>
         ) : (
           <>
-            <NavLink to="/login">Entrar</NavLink>
-            <NavLink className="btn" to="/register">Crear cuenta</NavLink>
+           <Link to="/login" className="nav-btn">Entrar</Link>
+<Link to="/register" className="nav-btn">Crear cuenta</Link>
           </>
         )}
       </div>
