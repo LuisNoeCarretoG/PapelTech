@@ -35,9 +35,9 @@ export default function Login() {
           <h1>Iniciar sesión</h1>
           <Alert type="error">{error}</Alert>
           <label>Correo</label>
-          <input name="correo" value={form.correo} onChange={handleChange} placeholder="admin@papeltech.com" />
+          <input name="correo" value={form.correo} onChange={handleChange} placeholder="ejemplo@papeltech.com" />
           <label>Contraseña</label>
-          <input name="password" type="password" value={form.password} onChange={handleChange} placeholder="Admin123*" />
+          <input name="password" type="password" value={form.password} onChange={handleChange} placeholder="Ejemplo123*" />
           <button className="btn" disabled={loading}>{loading ? 'Entrando...' : 'Entrar'}</button>
           <p>¿No tienes cuenta? <Link to="/register">Crear cuenta</Link></p>
         </form>
